@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/bootstrap.js"></script>
+    <title>All products</title>
+    <style>
+        nav{
+            background-image: url(pics/navbar.jpg);
+            background-position: center;
+        }
+        body{
+            background-image: url(pics/sitebg.jpg);
+            background-position: center;
+        }
+        *{
+            font-family: Serif ;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+        <!--NAVLINKS-->
+        <div class="container-fluid">
+            <a href="index.html" style="text-decoration:none; color:black;">
+                <h4>
+                    <img src="pics/computer logo.png" alt="" width="45px";>
+                    <span style="padding-top: 100px;"><strong>EZ PC</strong></span>
+                </h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--NAV LINKS-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 100px;">
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link active">Products</a>
+                    </li>
+                </ul>
+            </div>
+          
+        </div>
+         <!--NAVLINKS-->
+    </nav>
+    <hr style="border:none;"><hr style="border:none;"><hr style="border:none;"><hr style="border:none;"><hr style="border:none;"><hr style="border:none;">
+        <div class="container mt-4" style="height: 300vh;">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5 class="mt-3"><span><strong>Laptops</strong></span></h5>
+                        <p>Discover our powerful and affordable laptops</p>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/laptop1.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Laptop1</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱25,000</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1" onclick="updateBuyConfirmationModal('Laptop 1')">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#laptop1"> 
+                       Specification
+                    </button> 
+                    <div class="modal fade" id="laptop1"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        About this product
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th scope="row">Operating System</th>
+                                            <td>Windows 11 Home</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Processor</th>
+                                            <td>Intel® Core™ i5-1135G7</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Graphics</th>
+                                            <td colspan="2">GeForce® 1660 super</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Memory</th>
+                                            <td colspan="2">8GB DDR4</td>
+                                        </tr>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                    </div>
+
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/laptop2.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Laptop2</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱36,000</p>
+                        <button class="btn btn-primary  btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#laptop2"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="laptop2"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                                </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i7-1135G7</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">GeForce® 3050ti</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">8GB DDR4</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/laptop3.png" alt="Product " class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Laptop3</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱45,550</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#laptop3"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="laptop3"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 10 Home</td>
+                                                </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>AMD Ryzen™ 5 5600g (4.1GHZ)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">AMD Radeon Graphics</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">16GB DDR4</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/laptop4.png" alt="Product" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Laptop4</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱65,820</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#laptop4"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="laptop4"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Home</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>AMD Ryzen™ 3 3200g (4.1GHZ)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">AMD Radeon Graphics</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">8GB DDR4</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/laptop5.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Laptop5</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱65,500</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#laptop5"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="laptop5"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                                </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i7-1165G7</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">GTX 1660 super</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">16GB DDR4</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    
+            
+                    <hr style="border:none;">
+                    <div class="col-md-2">
+                        <h5 class="mt-3"><span><strong>Desktops</strong></span></h5>
+                        <p>Discover our poweful and affordable desktops</p>
+                        
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/pc1.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Dekstop 1</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱80,000</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#deskstop1"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="deskstop1"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                             <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                                </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i7-13700F</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Storage</th>
+                                                <td colspan="2">Kingston 2TB NV2 NVME PCIE M.2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">GIGABYTE GeForce RTX­­™ 4070 Ti Gaming OC</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">Kingston 32GB DDR5 6000MT/S Fury Renegade RGB</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/pc2.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Desktop 2</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱35,000</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#desktop2"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="desktop2"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                                </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i7-13700F 13TH Gen</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Storage</th>
+                                                <td colspan="2">Kingston 1TB NV2 PCIE NVME M.2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">MSI GeForce RTX3060 VENTUS 2X OC LHR 12GB GDDR6</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">Kingston 32GB DDR4 3200MHZ Fury Beast RGB (2x16)</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/pc3.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Desktop 3</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱55,000</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#desktop3"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="desktop3"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i5-13700F 13TH Gen</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Storage</th>
+                                                <td colspan="2">Kingston 1TB NV2 PCIE NVME M.2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">MSI GeForce RTX3050 VENTUS  12GB GDDR6</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">Kingston 32GB DDR4 3200MHZ Fury Beast RGB (2x16)</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/pc4.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Desktop 4</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱79,000</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#desktop4"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="desktop4"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            Specification
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                                </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i3-13100F 13th Gen</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Storage</th>
+                                                <td colspan="2">Kingston 1TB NV2 PCIE NVME M.2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">ASUS GeForce GTX 1650 TUF OC</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">Kingston 16GB DDR4 3200MHZ Fury Beast RGB (2X8)</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                     <div class="col-md-2">
+                        <a href="path-to-your-product-image1.jpg" target="_blank">
+                            <img src="pics/pc5.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                        </a>
+                        <h5 class="mt-3">Desktop 5</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-muted">₱120,000</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                        <!--MODAL-->
+                       <button type="button" class="btn btn-primary btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#desktop5"> 
+                        Specification
+                        </button> 
+                        <div class="modal fade" id="desktop5"> 
+                            <div class="modal-dialog  modal-lg"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h5 class="modal-title" id="GFGLabel">  
+                                            About this product
+                                        </h5> 
+                                        <button type="button" class="btn-close" 
+                                            data-bs-dismiss="modal" aria-label="Close"> 
+                                        </button> 
+                                    </div> 
+                                    <div class="modal-body"> 
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Operating System</th>
+                                                <td>Windows 11 Pro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>Intel® Core™ i5-13400F</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Storage</th>
+                                                <td colspan="2">Kingston 1TB NV2 PCIE NVME M.2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphics</th>
+                                                <td colspan="2">ASUS GeForce RTX™ 4060 Dual OC</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td colspan="2">Kingston 16GB DDR4 3200MHZ Fury Beast RGB</td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <!--MODAL-->
+                    </div>
+                   
+                    <!-- Add similar sections for other products -->
+                </div>
+                <hr style="border:none;">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5 class="mt-3"><strong>Graphics Card</strong></h5>
+                        <p>Level up your game through this GPU's</p>
+                    </div>
+                    <div class="col-md-2">
+                            <a href="path-to-your-product-image1.jpg" target="_blank">
+                                <img src="pics/graphics1.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                            </a>
+                            <h5 class="mt-3">GPU 1</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="text-muted">₱17,500</p>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                            <!--MODAL-->
+                            <button type="button" class="btn btn-primary btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#gpu1"> 
+                                Specification
+                            </button> 
+                                <div class="modal fade" id="gpu1"> 
+                                    <div class="modal-dialog  modal-lg"> 
+                                        <div class="modal-content"> 
+                                            <div class="modal-header"> 
+                                                <h5 class="modal-title" id="GFGLabel">  
+                                                    <strong>About this product</strong>
+                                                </h5> 
+                                                <button type="button" class="btn-close" 
+                                                    data-bs-dismiss="modal" aria-label="Close"> 
+                                                </button> 
+                                            </div> 
+                                            <div class="modal-body"> 
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <th scope="row">Boost Clock Speed:</th>
+                                                    <td>2666 Mhz</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">GPU Memory Size</th>
+                                                    <td>8 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Cooling System</th>
+                                                    <td colspan="2">Air Cooled</td>
+                                                </tr>
+                                            </table>
+                                            </div> 
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                            <a href="path-to-your-product-image1.jpg" target="_blank">
+                                <img src="pics/graphics2.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                            </a>
+                            <h5 class="mt-3">GPU 2</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="text-muted">₱14,250</p>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                            <!--MODAL-->
+                            <button type="button" class="btn btn-primary btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#gpu2"> 
+                                Specification
+                                </button> 
+                                <div class="modal fade" id="gpu2"> 
+                                    <div class="modal-dialog  modal-lg"> 
+                                        <div class="modal-content"> 
+                                            <div class="modal-header"> 
+                                                <h5 class="modal-title" id="GFGLabel">  
+                                                    <strong>About this product</strong>
+                                                </h5> 
+                                                <button type="button" class="btn-close" 
+                                                    data-bs-dismiss="modal" aria-label="Close"> 
+                                                </button> 
+                                            </div> 
+                                            <div class="modal-body"> 
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <th scope="row">Boost Clock Speed:</th>
+                                                        <td>2666 Mhz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">GPU Memory Size</th>
+                                                        <td>8 GB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Cooling System</th>
+                                                        <td colspan="2">Air Cooled</td>
+                                                    </tr>
+                                                </table>
+                                            </div> 
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                            <a href="path-to-your-product-image1.jpg" target="_blank">
+                                <img src="pics/graphics3.jpg" alt="Product 1" class="img-fluid border border-5 border-success">
+                            </a>
+                            <h5 class="mt-3">GPU 3</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="text-muted">₱10,250</p>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                            <!--MODAL-->
+                            <button type="button" class="btn btn-primary btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#gpu3"> 
+                                Specification
+                                </button> 
+                                <div class="modal fade" id="gpu3"> 
+                                    <div class="modal-dialog  modal-lg"> 
+                                        <div class="modal-content"> 
+                                            <div class="modal-header"> 
+                                                <h5 class="modal-title" id="GFGLabel">  
+                                                    <strong>About this product</strong>
+                                                </h5> 
+                                                <button type="button" class="btn-close" 
+                                                    data-bs-dismiss="modal" aria-label="Close"> 
+                                                </button> 
+                                            </div> 
+                                            <div class="modal-body"> 
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <th scope="row">Boost Clock Speed:</th>
+                                                        <td>2666 Mhz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">GPU Memory Size</th>
+                                                        <td>8 GB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Cooling System</th>
+                                                        <td colspan="2">Air Cooled</td>
+                                                    </tr>
+                                                </table>
+                                            </div> 
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                            <a href="path-to-your-product-image1.jpg" target="_blank">
+                                <img src="pics/graphics4.jpg" alt="Product 1" class="img-fluid border border-5 border-success">
+                            </a>
+                            <h5 class="mt-3">GPU 4</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="text-muted">₱41,000</p>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                            <!--MODAL-->
+                            <button type="button" class="btn btn-primary btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#gpu4"> 
+                                Specification
+                                </button> 
+                                <div class="modal fade" id="gpu4"> 
+                                    <div class="modal-dialog  modal-lg"> 
+                                        <div class="modal-content"> 
+                                            <div class="modal-header"> 
+                                                <h5 class="modal-title" id="GFGLabel">  
+                                                    <strong>About this product</strong>
+                                                </h5> 
+                                                <button type="button" class="btn-close" 
+                                                    data-bs-dismiss="modal" aria-label="Close"> 
+                                                </button> 
+                                            </div> 
+                                            <div class="modal-body"> 
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <th scope="row">Boost Clock Speed:</th>
+                                                        <td>2666 Mhz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">GPU Memory Size</th>
+                                                        <td>8 GB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Cooling System</th>
+                                                        <td colspan="2">Air Cooled</td>
+                                                    </tr>
+                                                </table>
+                                            </div> 
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--MODAL-->
+                    </div>
+                    <div class="col-md-2">
+                            <a href="path-to-your-product-image1.jpg" target="_blank">
+                                <img src="pics/graphics5.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                            </a>
+                            <h5 class="mt-3">GPU 5</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="text-muted">₱10,000</p>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                            <!--MODAL-->
+                            <button type="button" class="btn btn-primary btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#gpu5"> 
+                                Specification
+                                </button> 
+                                <div class="modal fade" id="gpu5"> 
+                                    <div class="modal-dialog  modal-lg"> 
+                                        <div class="modal-content"> 
+                                            <div class="modal-header"> 
+                                                <h5 class="modal-title" id="GFGLabel">  
+                                                    <strong>About this product</strong>
+                                                </h5> 
+                                                <button type="button" class="btn-close" 
+                                                    data-bs-dismiss="modal" aria-label="Close"> 
+                                                </button> 
+                                            </div> 
+                                            <div class="modal-body"> 
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <th scope="row">Boost Clock Speed:</th>
+                                                        <td>2666 Mhz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">GPU Memory Size</th>
+                                                        <td>8 GB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Cooling System</th>
+                                                        <td colspan="2">Air Cooled</td>
+                                                    </tr>
+                                                </table>
+                                            </div> 
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--MODAL-->
+                    </div>
+                </div>
+            <!-- MODAL CONTENT-->
+            <div class="modal fade" id="buyConfirmationModal" tabindex="-1" aria-labelledby="buyConfirmationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="buyConfirmationModalLabel">Buy Confirmation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="buyForm">
+                                <div class="mb-3">
+                                    <label for="buyFullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="buyFullName" name="buyFullName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="buyEmail" class="form-label">Address</label>
+                                    <input type="email" class="form-control" id="address" name="address" required>
+                                </div>
+                                <button type="button" class="btn btn-success" onclick="completeBuy()">Submit</button>
+                            </form>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+            <p class="mb-0">&copy; 2023 EZPC Abril. All rights reserved.</p>
+        </footer>
+        <script src="js/products.js"></script>
+</body>
+</html> 

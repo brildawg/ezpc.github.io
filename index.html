@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/bootstrap.js"></script>
+    <title>Home</title>
+    <style>
+        *{
+            font-family: Serif ;
+        }
+        nav{
+            background-image: url(pics/navbar.jpg);
+            background-position: center;
+        }
+        body{
+            background-image: url(pics/sitebg.jpg);
+            background-position: center;
+        }
+        section{
+            background-image: url(pics/sitebg.jpg);
+            background-position: center;
+        }
+        .card{
+            background-color: #29ADB2;
+        }
+    </style>
+ 
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <!--LOGO-->
+        <div class="container-fluid">   
+            <a href="index.html" style="text-decoration:none; color:black;">
+            <h4>
+            <img src="pics/computer logo.png" alt="" width="45px";>
+             <span style="padding-top: 100px;"><strong>EZ PC</strong></span>
+            </h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--NAV LINKS-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 100px;">
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link"><strong>Products</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link"><strong>Services</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+            <!--NAV LINKS-->
+        </div>
+    </nav>
+
+<!-- Your Home content goes here -->
+    <section id="home" style=" height: 60vh;
+    padding: 20px;
+    margin-bottom: 100px; 
+    padding-top: 70px;">
+        <div class="row mt-2">
+            <div class="col-md-8">
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="pics/content img.jpg" class="d-block w-100" alt="Image 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NVIDIA</h5>
+                        
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                    <img src="pics/content img2.jpg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Republic Of Gamers</h5>
+                    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pics/content img3.jpg" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Razer</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pics/content img4.jpg" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>AMD Radeon</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pics/content img5.jpg" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Intel</h5>
+                    </div>
+                </div>
+              
+           
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <h2><strong>Welcome to EZPC</strong></h2>
+            <p>Experience peak performance and unbeatable value at our computer store, where cutting-edge technology meets affordability because your computing needs deserve the best.</p>
+            <div class="accordion">
+                <div class="accordion-item bg-success">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h2>About <strong> EZPC</strong></h2>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-info">
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border:none;">
+                <!-- Add more accordion items as needed -->
+            </div>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>Holday Sale!</strong> Saves 30% Discount buy now!!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>EZPC Birthday PROMO!</strong> If it's your birthday today you have a free laptop
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>Freebies! </strong>Buy one of our bundles and get a EZPC merch
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        </div>
+    </section>
+ 
+<!-- Your Home content goes here -->
+
+    <hr style="border:none;">
+    <hr style="border:none;">
+    <hr style="border:none;">
+<!-- Your Products content goes here -->
+    <section id="products" style="height: 320vh;">
+    <div class="container mt-5">
+            <div class="row">
+            <h1 class="text-center"><strong>Products</strong></h1>
+                <div class="col-md-4">
+                    <img src="pics/laptop1.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                    <h5 class="mt-3">Product 1</h5>
+                    <p>Powerful laptop with high-performance features. Ideal for work and entertainment.</p>
+                    <p class="text-muted">₱35,000</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1" onclick="updateBuyConfirmationModal('Laptop 1')">Buy Now</button>
+                  
+                    <!--MODAL-->
+                    <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#product1"> 
+                        Specification
+                    </button> 
+                    <div class="modal fade" id="product1"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        About this product
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                <table class="table table-bordered">
+                                        <tr>
+                                            <th scope="row">Operating System</th>
+                                            <td>Windows 11 Home</td>
+                                            </tr>
+                                        <tr>
+                                            <th scope="row">Processor</th>
+                                            <td>Intel® Core™ i5-1135G7</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Graphics</th>
+                                            <td colspan="2">GeForce® 1660 super</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Memory</th>
+                                            <td colspan="2">8GB DDR4</td>
+                                        </tr>
+                                </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/graphics2.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                    <h5 class="mt-3">Product 2</h5>
+                    <p>Powerful laptop with high-performance features. Ideal for work and entertainment.</p>
+                    <p class="text-muted">₱10,599</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                    <!--MODAL-->
+                    <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#product2"> 
+                        Specification
+                    </button> 
+                    <div class="modal fade" id="product2"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        <strong>About this product</strong>
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                    <table class="table table-bordered">
+                                            <tr>
+                                                <th scope="row">Boost Clock Speed:</th>
+                                                <td>1822 Mhz MHz</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">GPU Memory Size</th>
+                                                <td>8 GB</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Cooling System</th>
+                                                <td colspan="2">Air Cooled</td>
+                                            </tr>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                </div>
+
+                <div class="col-md-4">
+                    <img src="pics/pc1.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                    <h5 class="mt-3">Product 3</h5>
+                    <p>Powerful laptop with high-performance features. Ideal for work and entertainment.</p>
+                    <p class="text-muted">₱45,450</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                       <!--MODAL-->
+                       <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#product3"> 
+                        Specification
+                    </button> 
+                    <div class="modal fade" id="product3"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        <strong>About this product</strong>
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th scope="row">Operating System</th>
+                                            <td>Windows 11 Home</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Processor</th>
+                                            <td>Intel® Core™ i5-13400F</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Motherboard</th>
+                                            <td colspan="2">ASUS PRIME B660M-K Gaming Motherboard</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Memory</th>
+                                            <td>Kingston 16GB DDR4 3200MHZ Fury Beast RGB</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Storage</th>
+                                            <td>Kingston 1TB NV2 PCIE NVME M.2</td>
+                                        </tr>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                    
+                </div>
+                <hr style="border:none;">
+                <div class="col-md-4">
+                    <img src="pics/graphics3.jpg" alt="Product 1" class="img-fluid border border-5 border-success">
+                    <h5 class="mt-3">Product 4</h5>
+                    <p>Powerful laptop with high-performance features. Ideal for work and entertainment.</p>
+                    <p class="text-muted">₱11,250</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                       <!--MODAL-->
+                       <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#product4"> 
+                        Specification
+                    </button> 
+                    <div class="modal fade" id="product4"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        <strong>About this product</strong>
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th scope="row">Boost Clock Speed:</th>
+                                            <td>2232 MHz</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">GPU Memory Size</th>
+                                            <td>8GB</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Cooling System</th>
+                                            <td colspan="2">None</td>
+                                        </tr>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/laptop3.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                    <h5 class="mt-3">Product 5</h5>
+                    <p>Powerful laptop with high-performance features. Ideal for work and entertainment.</p>
+                    <p class="text-muted">₱70,600</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                       <!--MODAL-->
+                       <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#product5"> 
+                        Specification
+                    </button> 
+                    <div class="modal fade" id="product5"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        <strong>About this product</strong>
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th scope="row">Operating System</th>
+                                            <td>Windows 11 Home</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Processor</th>
+                                            <td>Intel® Core™ i7-1165G7</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Graphics</th>
+                                            <td colspan="2">Intel® Iris® Xe Graphics</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Memory</th>
+                                            <td colspan="2">2x 4GB DDR4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Storage</th>
+                                            <td colspan="2">512GB M.2 PCIe NVMe SSD</td>
+                                        </tr>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/pc3.png" alt="Product 1" class="img-fluid border border-5 border-success">
+                    <h5 class="mt-3">Product 6</h5>
+                    <p>Powerful laptop with high-performance features. Ideal for work and entertainment.</p>
+                    <p class="text-muted">₱55,000</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyConfirmationModal" data-product="laptop1">Buy Now</button>
+                       <!--MODAL-->
+                       <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#product5"> 
+                        Specification
+                    </button> 
+                    <div class="modal fade" id="product5"> 
+                        <div class="modal-dialog  modal-lg"> 
+                            <div class="modal-content"> 
+                                <div class="modal-header"> 
+                                    <h5 class="modal-title" id="GFGLabel">  
+                                        <strong>About this product</strong>
+                                    </h5> 
+                                    <button type="button" class="btn-close" 
+                                        data-bs-dismiss="modal" aria-label="Close"> 
+                                    </button> 
+                                </div> 
+                                <div class="modal-body"> 
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th scope="row">Operating System</th>
+                                            <td>Windows 11 Pro</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Processor</th>
+                                            <td>AMD Ryzen™ 5 4500 (4.1GHZ)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Motherboard</th>
+                                            <td colspan="2">ASUS Prime B450M-A II CSM</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Memory</th>
+                                            <td>Kingston 16GB DDR4 3200MHZ Fury Beast</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Storage</th>
+                                            <td>Kingston 500GB NV2 PCIE NVME M.2</td>
+                                        </tr>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!--MODAL-->
+                </div>
+                
+                <!-- Add more if you want-->
+            </div>
+           
+
+            <!-- "View More" button aligned to the right -->
+            <div class="row mt-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="nextPage()">View More</button>
+                </div>
+            </div>
+            <script src="js/products.js"></script>
+
+            <!-- Modal for buy confirmation -->
+            <div class="modal fade" id="buyConfirmationModal" tabindex="-1" aria-labelledby="buyConfirmationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="buyConfirmationModalLabel"><strong>Buy Confirmation</strong></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="buyForm">
+                            <div class="mb-3">
+                                <label for="buyFullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="buyFullName" name="buyFullName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                            </div>
+                            <button type="button" class="btn btn-success" onclick="completeBuy()">Submit</button>
+                        </form>
+                        <script src="js/products.js"></script>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                   
+    </div>
+    </section>
+<!-- Your Products content goes here -->
+
+<!-- Your services content goes here -->
+    <section id="services" style="height: 150vh;">
+        <div class="container">
+            <div class="row">
+            <h2 class="text-center"><strong>Our Services</strong></h2>
+                    <div class="col-md-3">
+                        <div id="repair" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="pics/repair.png" class="d-block w-100" alt="Computer Repair 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/repair2.png" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/repair3.png" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <!-- Add more carousel items as needed -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#repair" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#repair" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Computer Repair</strong></h5>
+                                    <p class="card-text">
+                                    EZPC offers professional computer repair services to fix hardware and software issues. Our experienced technicians ensure your computer runs smoothly.
+                                    <br>
+                                    .
+                                    </p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>                       
+                <div class="col-md-3">
+                    <div class="card">
+                        <div id="os" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="pics/os.png" class="d-block w-100" alt="Computer Repair 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/os2.jpg" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/os3.jpg" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <!-- Add more carousel items as needed -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#os" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#os" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>OS Installation</strong></h5>
+                                    <p class="card-text">
+                                        EZPC Offers, Reliable operating systems designed for you. Enjoy seamless installation processes and exclusive discounts to ensure your system is up-to-date with the latest features and security.
+                                    </p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div id="cleaning" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="pics/cleaning.jpg" class="d-block w-100" alt="Computer Repair 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/cleaning2.jpg" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/cleaning3.jpg" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <!-- Add more carousel items as needed -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cleaning" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cleaning" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>PC/Laptop Cleaning</strong></h5>
+                                    <p class="card-text">
+                                    EZPC Offers, cleaning service ensures your computer is free from dust and debris, promoting optimal performance and longevity. We meticulously clean internal components, and peripherals.
+                                    </p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div id="build" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="pics/building.jpg" class="d-block w-100" alt="Computer Repair 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/building2.jpg" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="pics/building3.jpg" class="d-block w-100" alt="Computer Repair 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#build" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#build" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>PC Building</strong></h5>
+                                    <p class="card-text">
+                                    EZPC Offers, PC building offers designed to elevate your computing experience. Unleash the power of customization as you choose from a curated selection of high-performance components.
+                                    </p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    
+            <p class="mb-0">&copy; 2023 EZPC Abril. All rights reserved.</p>
+        
+    </footer>
+<!-- Your services content goes here -->
+
+<!-- Your contact content goes here -->
+    
+<!-- Your contact content goes here -->
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/bootstrap.js"></script>
+    <title>Contact</title>
+    <style>
+        *{
+            font-family: Serif ;
+        }
+        nav{
+            background-image: url(pics/navbar.jpg);
+            background-position: center;
+        }
+        body{
+            background-image: url(pics/sitebg.jpg);
+            background-position: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <!--LOGO-->
+    <div class="container-fluid">
+        <a href="index.html" style="text-decoration:none; color:black;">
+            <h4>
+                <img src="pics/computer logo.png" alt="" width="45px";>
+                <span style="padding-top: 100px;"><strong>EZ PC</strong></span>
+            </h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAV LINKS-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav"
+             style="padding-right: 100px;">
+            <ul class="navbar-nav nav-pills">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--NAV LINKS-->
+    </div>
+</nav>
+
+<hr><hr><hr>
+
+<div class="container mt-5 shadow">
+    <div class="row">
+        <div class="col-md-4 bg-primary p-5 text-white order-sm-first order-last bg-success">
+            <h2>Let's get in touch</h2>
+            <p>We're open for any suggestion or just to have a chat</p>
+            <div class="d-flex mt-2">
+                <i class="bi bi-geo-alt"></i>
+                <p class="mt-3 ms-3">Address : Blk 187 Lot 4 Pacific Ocean</p>
+            </div>
+            <div class="d-flex mt-2">
+                <p class="mt-4 ms-3">
+                    <img src="pics/phone.png" alt="phone" width="20px;">  0909099090909
+                </p>
+            </div>
+            <div class="d-flex mt-2">
+                <a href="https://www.facebook.com/profile.php?id=100093017222066" target="_blank" style="text-decoration:none; color:white;">
+                    <p class="mt-4 ms-3">
+                        <img src="pics/fb.png" alt="fb" width="20px;">
+                        Facebook
+                    </p>
+                </a>
+            </div>
+            <div class="d-flex mt-2">
+                <a href="mailto:someone@example.com" target="_blank" style="text-decoration:none; color:white;">
+                    <p class="mt-4 ms-3">
+                        <img src="pics/mail.png" alt="fb" width="30px;">
+                        Send email
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-8 p-5">
+            <h2>Get in touch</h2>
+            <form class="row g-3 contactForm mt-4" id="myForm">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-12">
+                    <label for="inputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPhoneNumber" class="form-label">Contact Number</label>
+                    <input type="tel" class="form-control" id="contactNumber" required>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary mt-3" onclick="submitForm()">Submit</button>
+                    <p id="successMessage" class="mt-3 text-success d-none">Form submitted successfully!</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    
+    <p class="mb-0">&copy; 2023 EZPC Abril. All rights reserved.</p>
+
+</footer>
+
+<script>
+    
+    function submitForm() {
+        // Retrieve form values
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const city = document.getElementById('city').value;
+        const contactNumber = document.getElementById('contactNumber').value;
+
+      
+        alert('Form submitted successfully!');
+
+        document.getElementById('myForm').reset();
+
+        document.getElementById('successMessage').classList.remove('d-none');
+    }
+</script>
+
+</script>
+    
+</body>
+</html>
